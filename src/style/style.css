@@ -1,0 +1,573 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --CB: "Comfortaa-Bold", sans__serif;
+    --CR: "Comfortaa-Regular", sans__serif;
+    --MR: "Montserrat-Regular", sans__serif;
+    --MB: "Montserrat-Bold", sans__serif;
+    --RR: "Roboto-regular", sans__serif;
+    --RM: "Roboto__Medium", sans__serif;
+
+}
+
+body {
+    background-color: #040D1F;
+    
+}
+
+header, main, footer, .head__top, .head__main__banner, .head__top, .head__bottom, .body__main, .main__content  {
+    width: 100%;
+    
+}
+.head__main__banner, .body__main, .main-middle, .collection, .head__bottom, .head__main__banner, .series, .footer{
+    padding: 0 20px
+}
+.head__top, .head__bottom, .body__main, .footer, .collection, .series, .one, .main-middle, .collection-films, .series__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.head__top {
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    padding: 20px 20px;
+}
+
+.container {
+    max-width: 1113px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.head-top{
+    align-items: center;
+}
+.fa-film {
+    width: 50px;
+    height: 40px;
+}
+
+.head__slogan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    gap: 24px;
+}
+
+.head__slogan p {
+    max-width: 166px;
+    width: 100%;
+    font-family: var(--CR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.container__head__bottom {
+    height: 100%;
+}
+
+.head__bottom {
+    padding: 29px 20px;
+    background: rgb(2, 5, 10);
+    backdrop-filter: blur(15px);
+}
+
+.head__menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    font-family: var(--MR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.menu__pargf::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background: #ED8E00;
+    border-radius: 23px 23px 0px 0px;
+    opacity: 0;
+}
+
+.menu__pargf:hover::before {
+    opacity: 1;
+}
+
+.menu__pargf:hover a {
+    color: #ED8E00;
+}
+
+/* main banner */
+.head__main__banner {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background: url(../assets/img/kong_skull_island\ 1.svg) no-repeat center/cover;
+}
+.head__main__banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(7, 15, 25, 0.75);
+}
+.head__main__banner__content {
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+    gap: 30px;
+}
+
+.banner__title {
+    max-width: 600px;
+    width: 100%;
+    font-family: var(--MB);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+
+
+}
+
+.banner__description {
+    max-width: 570px;
+    width: 100%;
+    font-family: var(--MR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #C8C8C8;
+}
+
+.banner__button {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.button {
+    padding: 17px 48px;
+    background: #F18128;
+    font-family: var(--RM);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: black;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.main__content{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-family: var(--CR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    
+    padding: 65px 0;
+}
+
+.button:hover {
+    background: #040D1F;
+    color: white;
+}
+.wrapper {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 30px;
+    
+}
+.one{
+    position: relative;
+    height: 368px;
+    gap: 12px;
+    padding: 54px 14px 25px;
+    border-radius: 6px;
+}
+.black{
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../assets/img/Black_Panther_film_poster\ 1.svg) no-repeat center/cover;
+}
+.dark{
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../assets/img/dark.svg) no-repeat center/cover;
+}
+.gentlemen{
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../assets/img/gentlemen.svg) no-repeat center/cover;
+}
+.ring{
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../assets/img/ring.svg) no-repeat center/cover;
+}
+
+.one p, .one span, .one h2, .one a{
+    z-index: 3;
+}
+.one p{
+    font-family: var(--MR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    color: #FFFFFF;
+    padding: 7px 27px;
+    background: rgba(7, 15, 25, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+  }
+  .one span{
+    max-width: 226px;
+    width: 100%;
+    font-family: var(--RR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+  }
+  .one h2{
+    margin-top: 18px;
+    font-family: var(--MR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .main__content__title{
+    max-width: fit-content;
+    width: 100%;
+    font-family: var(--CR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: #F18128;
+    border-bottom: 2px solid;
+    margin-bottom: 55px;
+  }
+.main-middle{
+    background: url(../assets/img/middle-bg.svg) no-repeat center/cover;
+}
+.middle__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 42px 0 80px;
+}
+.middle__content__text{
+    max-width:558px;
+    width: 100%;
+    font-family: var(--RR);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+.wrapper-collection {
+    display: grid;
+    grid-auto-rows: minmax(194px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+     /* 350px 350px 350px; */
+    gap: 30px;
+}
+.collection-films{
+    position: relative;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 6px;
+}
+.collection-films::after{
+    content: url(../assets/img/line.svg);
+    width: 20px;
+    left: 6.77px;
+    position: absolute;
+    z-index: 2;
+}
+.collection-films::before{
+    content: url(../assets/img/line.svg);
+    width: 20px;
+    right: 6.77px;
+    position: absolute;
+    z-index: 2;
+}
+
+.collection-container{
+    padding:63px 0;
+}
+.marvel{
+    background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%), url(../assets/img/marvel.svg) no-repeat center/cover;
+}
+.fast{
+    background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%), url(../assets/img/fast.svg) no-repeat center/cover;
+}
+.star-wars{
+    background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%), url(../assets/img/star-wars.svg) no-repeat center/cover;
+}
+.collection-films h3{
+    font-family: var(--CB);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.series-container{
+    margin-bottom: 63px;
+}
+
+.wrapper-series{
+    display: grid;
+    grid-template-columns: repeat(3, 255px);
+    grid-auto-rows: 436px 184px 184px 184px 184px 184px 184px;
+    gap: 30px;
+}
+.series__block{
+    justify-content: center;
+    gap: 20px;
+    border-radius: 6px;
+}
+.series__block__headline{
+    font-family: var(--CB);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+}
+.series__block__text{
+    font-family: var(--CR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.game-thrones {
+    padding: 0 22px;
+    gap: 30px;
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%), url(../assets/img/Game-of-Thrones.svg) no-repeat center/cover;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.vanda {
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%), url(../assets/img/Wanda-Vision.svg) no-repeat center/cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+.series__block__title{
+    font-family: var(--CB);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.flesh{
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../assets/img/Flash.svg) no-repeat center/cover;
+}
+.great{
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../assets/img/Great.svg) no-repeat center/cover;
+}
+.gotam {
+    grid-column-start: 3;
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../assets/img/gotem.svg) no-repeat center/cover;
+}
+.witcher{
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../assets/img/The-witcher.svg) no-repeat center/cover;
+}
+.footer{
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+.footer-container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0 26px 0;
+}
+.footer__app{
+    display: flex;
+    gap: 50px;
+}
+.footer-container p {
+    font-family: var(--CB);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+@media (max-width: 1150px){
+    .witcher, .great{
+        grid-row-start: 4;
+    }
+    .flesh, .gotam{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .great{
+        grid-column-start: 5;
+        grid-column-end: 3;
+    }
+    .witcher{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media (max-width: 895px){
+    .flesh{
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .great{
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .gotam{
+        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .witcher{
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .vanda{
+        grid-column-end: 5;
+    }
+    .wrapper-series{
+        grid-template-columns:auto;
+        grid-auto-rows: auto;
+    }
+    .series__block{
+        padding: 20px 0;
+    }
+}
+@media (max-width: 593px){
+    .footer-container{
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 550px){
+    .head__menu{
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width: 490px){
+    .middle__content img{
+        width: 100%;
+    }
+}
+@media (max-width: 445px){
+    .series__block{
+        padding: 20px 0;
+    }
+}    
+@media (max-width: 396px){
+    .wrapper-collection{
+        grid-template-columns: auto;
+    }
+    .banner__button{
+        flex-direction: column;
+    }
+    .head__main__banner{
+        padding-bottom: 30px;
+    }
+    .series__block__title{
+        text-align: center;
+    }
+    .head__main__banner__content{
+        gap: 0;
+    }
+}
