@@ -12,12 +12,12 @@ a {
 }
 
 :root {
-    --CB: "Comfortaa-Bold", sans__serif;
-    --CR: "Comfortaa-Regular", sans__serif;
-    --MR: "Montserrat-Regular", sans__serif;
-    --MB: "Montserrat-Bold", sans__serif;
-    --RR: "Roboto-regular", sans__serif;
-    --RM: "Roboto__Medium", sans__serif;
+    --CB: "Comfortaa-Bold", sans-serif;
+    --CR: "Comfortaa-Regular", sans-serif;
+    --MR: "Montserrat-Regular", sans-serif;
+    --MB: "Montserrat-Bold", sans-serif;
+    --RR: "Roboto-regular", sans-serif;
+    --RM: "Roboto-Medium", sans-serif;
 
 }
 
